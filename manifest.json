@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Apply ROT13",
+  "description": "Apply ROT13 to selected text and display",
+  "version": "1.0",
+  "author": "Hartmut Welpmann [:welpy-cw]",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "welpy-cw.rot13@addons.thunderbird.net",
+      "strict_min_version": "128.0",
+      "strict_max_version": "133.*"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["menus", "messagesRead"]
+}
