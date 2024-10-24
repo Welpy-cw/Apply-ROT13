@@ -7,8 +7,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "welpy-cw.rot13@addons.thunderbird.net",
-      "strict_min_version": "128.0",
-      "strict_max_version": "133.*"
+      "strict_min_version": "115.0"
     }
   },
   "background": {
