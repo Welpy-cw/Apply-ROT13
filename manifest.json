@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Apply ROT13",
   "description": "Apply ROT13 to selected text and display",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Hartmut Welpmann [:welpy-cw]",
   "browser_specific_settings": {
     "gecko": {

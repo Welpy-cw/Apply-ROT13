@@ -17,11 +17,6 @@ messenger.menus.create({
 });
 
 messenger.menus.onShown.addListener((info, tab) => {
-  console.log(info.pageUrl);
-  if (!info.pageUrl) {
-    return;
-  }
-
   messenger.menus.update(displayROT13, {
     visible: true,
   });
@@ -32,7 +27,6 @@ messenger.menus.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId != displayROT13) {
     return;
   }
-  console.log(info.selectionText);
   const params = new URLSearchParams({
     rot13text: applyROT13(info.selectionText),
   });
