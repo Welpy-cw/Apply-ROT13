@@ -13,14 +13,7 @@ messenger.menus.create({
   contexts: ["selection"],
   title: "Apply ROT13 and Display",
   id: displayROT13,
-  visible: false,
-});
-
-messenger.menus.onShown.addListener((info, tab) => {
-  messenger.menus.update(displayROT13, {
-    visible: true,
-  });
-  messenger.menus.refresh();
+  visible: true,
 });
 
 messenger.menus.onClicked.addListener(async (info, tab) => {
