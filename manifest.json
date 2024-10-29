@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Apply ROT13",
   "description": "Apply ROT13 to selected text",
-  "version": "2.0",
+  "version": "2.1",
   "author": "Hartmut Welpmann [:welpy-cw]",
   "browser_specific_settings": {
     "gecko": {
@@ -13,5 +13,13 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions": ["activeTab", "compose", "menus", "messagesModify"]
+  "permissions": ["activeTab", "compose", "menus", "messagesModify"],
+  "commands": {
+    "apply_rot13": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D"
+      },
+      "description": "Apply ROT13 to selected text"
+    }
+  }
 }

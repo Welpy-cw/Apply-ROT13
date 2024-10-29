@@ -1,9 +1,14 @@
 (() => {
   const selection = document.getSelection();
+  if (selection.isCollapsed) {
+    return;
+  }
+
   if (selection.rangeCount != 1) {
     console.warn("Apply ROT13: Multi-range selections are not supported.");
     return;
   }
+
   const range = selection.getRangeAt(0);
 
   const applyROT13 = (text) => {
